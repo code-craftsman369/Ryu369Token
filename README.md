@@ -8,13 +8,15 @@ My first ERC-20 token built with Solidity and OpenZeppelin.
 - **Symbol:** RYU369
 - **Total Supply:** 1,000,000 RYU369
 - **Standard:** ERC-20
-- **Blockchain:** Ethereum (Remix VM)
+- **Blockchain:** Ethereum (Sepolia Testnet)
+- **Contract Address:** 0xA346b8B1Cafe3aE0acDFE30961Fd44EBd9855c00
 
 ## Technology Stack
 
 - Solidity ^0.8.20
 - OpenZeppelin Contracts
-- Remix IDE
+- Hardhat
+- Ethers.js
 
 ## Contract Code
 ```solidity
@@ -32,13 +34,28 @@ contract Ryu369Token is ERC20 {
 
 ## Deployment
 
-Deployed on Remix VM (Prague) for testing and learning purposes.
+Deployed on Sepolia Testnet using Hardhat.
+
+**View on Etherscan:**  
+https://sepolia.etherscan.io/address/0xA346b8B1Cafe3aE0acDFE30961Fd44EBd9855c00
+
+## Setup
+```bash
+npm install
+```
+
+## Deploy
+```bash
+npx hardhat run scripts/deploy.js --network sepolia
+```
 
 ## Learning Journey
 
 This token was created as part of my blockchain development learning path:
+
 - ✅ Completed CryptoZombies Lessons 1-6
 - ✅ Created first ERC-20 token
+- ✅ Deployed to Sepolia testnet with Hardhat
 - 🎯 Goal: Become a top DeFi developer
 
 ## Author
@@ -49,7 +66,7 @@ This token was created as part of my blockchain development learning path:
 
 ## Date
 
-November 22, 2025
+November 26, 2025
 
 ---
 
